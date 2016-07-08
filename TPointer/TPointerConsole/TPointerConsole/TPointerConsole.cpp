@@ -7,4 +7,5 @@ int main()
 {
 	cout << "WTF";
 	return 0;
+	
 }
