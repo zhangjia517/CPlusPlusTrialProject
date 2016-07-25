@@ -5,6 +5,13 @@ using namespace std;
 
 int main()
 {
-	cout << "WTF";
+	int x, y = 15;
+	int *ip;
+	ip = &y;
+	cout << ip << " "
+		<< &y << " "
+		<< y << " "
+		<< *ip;
+
 	return 0;
 }

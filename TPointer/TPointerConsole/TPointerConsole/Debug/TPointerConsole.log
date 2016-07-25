@@ -1,2 +1,3 @@
 ﻿  TPointerConsole.cpp
+g:\cplusplusproject\tpointer\tpointerconsole\tpointerconsole\tpointerconsole.cpp(8): warning C4101: 'x': unreferenced local variable
   TPointerConsole.vcxproj -> G:\CPlusPlusProject\TPointer\TPointerConsole\Debug\TPointerConsole.exe
