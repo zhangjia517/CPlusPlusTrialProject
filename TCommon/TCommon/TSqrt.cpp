@@ -65,19 +65,19 @@ TSqrt::TSqrt()
 		SqrtByNewton(x);
 	QueryPerformanceCounter(&d3);
 	for (unsigned int i = 0; i < LoopCount; i++)
-		InvSqrt(x);
+		sqrt(x);
 	QueryPerformanceCounter(&d4);
 	for (unsigned int i = 0; i < LoopCount; i++)
-		sqrt(x);
+		InvSqrt(x);
 	QueryPerformanceCounter(&d5);
 
 	printf("计算sqrt(65535)结果的对比\n");
 	printf("--------------------------------------\n");
 	printf("    方法     \t 时间\t  计算结果\n");
-	printf("二分法     : %8.2f\t%8.8f\n", ((float)d2.QuadPart - (float)d1.QuadPart), SqrtByBisection(x));
-	printf("牛顿迭代法 : %8.2f\t%8.8f\n", ((float)d3.QuadPart - (float)d2.QuadPart), SqrtByNewton(x));
-	printf("神奇的方法 : %8.2f\t%8.8f\n", ((float)d4.QuadPart - (float)d3.QuadPart), InvSqrt(x));
-	printf("System方法 : %8.2f\t%8.8f\n", ((float)d5.QuadPart - (float)d4.QuadPart), sqrt(x));
+	printf("二分法     : %8.2f\t%8.8f\n", ((double)d2.QuadPart - (double)d1.QuadPart), SqrtByBisection(x));
+	printf("牛顿迭代法 : %8.2f\t%8.8f\n", ((double)d3.QuadPart - (double)d2.QuadPart), SqrtByNewton(x));
+	printf("System方法 : %8.2f\t%8.8f\n", ((double)d4.QuadPart - (double)d3.QuadPart), sqrt(x));
+	printf("卡马克方法 : %8.2f\t%8.8f\n", ((double)d5.QuadPart - (double)d4.QuadPart), InvSqrt(x));
 	printf("--------------------------------------\n");
 }
 
