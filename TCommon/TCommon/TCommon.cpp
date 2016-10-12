@@ -3,11 +3,14 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include "TArray.h"
 
 using namespace std;
 
 int main()
 {
-	cout << "what the fuck";
+	TArray::ForArray();
+
+	cin.get();
 	return 0;
 }
