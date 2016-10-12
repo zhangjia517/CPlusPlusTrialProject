@@ -1,6 +1,3 @@
-﻿  stdafx.cpp
-  TCommon.cpp
-  TArray.cpp
-  正在生成代码...
+﻿  TSqrt.cpp
   TCommon.vcxproj -> G:\CPlusPlusProject\TCommon\Debug\TCommon.exe
   TCommon.vcxproj -> G:\CPlusPlusProject\TCommon\Debug\TCommon.pdb (Full PDB)
