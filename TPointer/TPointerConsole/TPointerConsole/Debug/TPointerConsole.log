@@ -1,3 +1,6 @@
-﻿  TPointerConsole.cpp
-  LINK : G:\CPlusPlusProject\TPointer\TPointerConsole\Debug\TPointerConsole.exe not found or not built by the last incremental link; performing full link
+﻿  stdafx.cpp
+  TPointerConsole.cpp
+  TArray.cpp
+  正在生成代码...
   TPointerConsole.vcxproj -> G:\CPlusPlusProject\TPointer\TPointerConsole\Debug\TPointerConsole.exe
+  TPointerConsole.vcxproj -> G:\CPlusPlusProject\TPointer\TPointerConsole\Debug\TPointerConsole.pdb (Full PDB)
