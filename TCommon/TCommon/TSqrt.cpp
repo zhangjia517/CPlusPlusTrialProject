@@ -71,14 +71,14 @@ TSqrt::TSqrt()
 		sqrt(x);
 	QueryPerformanceCounter(&d5);
 
-	printf("下面是计算sqrt(65535)结果的对比\n");
-	printf("-----------------------------------------\n");
-	printf("    方法     \t时间\t计算结果\n");
+	printf("计算sqrt(65535)结果的对比\n");
+	printf("--------------------------------------\n");
+	printf("    方法     \t 时间\t  计算结果\n");
 	printf("二分法     : %8.2f\t%8.8f\n", ((float)d2.QuadPart - (float)d1.QuadPart), SqrtByBisection(x));
 	printf("牛顿迭代法 : %8.2f\t%8.8f\n", ((float)d3.QuadPart - (float)d2.QuadPart), SqrtByNewton(x));
 	printf("神奇的方法 : %8.2f\t%8.8f\n", ((float)d4.QuadPart - (float)d3.QuadPart), InvSqrt(x));
 	printf("System方法 : %8.2f\t%8.8f\n", ((float)d5.QuadPart - (float)d4.QuadPart), sqrt(x));
-	printf("-----------------------------------------\n");
+	printf("--------------------------------------\n");
 }
 
 TSqrt::~TSqrt()
