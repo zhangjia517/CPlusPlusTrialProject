@@ -15,10 +15,17 @@ COUT::~COUT()
 
 void COUT::Execute()
 {
+	int* p = nullptr;
+	int i = 5;
+	p = &i;
+	int j = *p;
+
 	cout << strAdd("Hello");
+	cout << "p: \n";
+	cout << p;
 }
 
 string COUT::strAdd(string str1)
 {
-	return str1 + " World!";
+	return str1 + " World!\n";
 }
