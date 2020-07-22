@@ -14,7 +14,7 @@ TArray::~TArray()
 
 int TArray::ForArray()
 {
-	int i, *p;
+	int i, * p;
 	int a[10] = { 12,23,85,8,54,77,89,44,20,95 };
 	p = &a[0];
 	for (i = 0; i < 10; i++)
