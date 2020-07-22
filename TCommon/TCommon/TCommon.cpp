@@ -5,12 +5,15 @@
 #include <iostream>
 #include "TArray.h"
 #include "TSqrt.h"
+#include "COUT.h"
+#include <string>
 
 using namespace std;
 
 int main()
 {
-	TSqrt();
+	COUT cOUT;
+	cOUT.Execute();
 
 	cin.get();
 	return 0;
